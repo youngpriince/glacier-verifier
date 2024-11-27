@@ -39,6 +39,10 @@ sudo usermod -aG docker $USER
 # change $YOUR_PRIVATE_KEY to your private key
 docker run -d -e PRIVATE_KEY=$YOUR_PRIVATE_KEY --name glacier-verifier docker.io/glaciernetwork/glacier-verifier:v0.0.2
 ```
+## Check logs
+```console
+docker logs -f glacier-verifier
+```
 ## Note
 * You'll get a non-transferable NFT once your node goes live. It will take some minutes before you receive the NFT
 * You can scan your [address](https://testnet.opbnbscan.com) to check if you've received the NFT
